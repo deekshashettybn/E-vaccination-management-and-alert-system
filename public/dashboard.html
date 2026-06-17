@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard | E-Vaccination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="dashboard">
+    <h1>Parent Dashboard</h1>
+    <p id="welcomeText"></p>
+
+    <div class="dashboard-actions">
+      <a href="add-child.html" class="add-btn">👶 Add Child Details</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <h2>Your Children & Vaccine Schedule</h2>
+    <div id="reminderContainer"></div>
+    <div class="progress-section">
+  <h3>Vaccination Progress</h3>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <p id="progressText">0% Completed</p>
+</div>
+  <div class="calendar-section">
+
+  <h2>📅 Upcoming Vaccinations</h2>
+
+  <div id="calendarContainer"></div>
+
+</div>
+    <div id="childrenContainer"></div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

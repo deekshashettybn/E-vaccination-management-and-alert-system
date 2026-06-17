@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <h1>🏥 Hospital Dashboard</h1>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+    <div class="stats-grid">
+        <div class="chart-container">
+  <canvas id="vaccineChart"></canvas>
+</div>
+      <div class="stat-card">
+        <h2 id="childCount">0</h2>
+        <p>Total Children</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="doneCount">0</h2>
+        <p>Vaccines Completed</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="overdueCount">0</h2>
+        <p>Overdue Vaccines</p>
+      </div>
+
+    </div>
+<div class="search-box">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by child name or parent phone"
+  >
+</div>
+    <div id="hospitalChildrenContainer"></div>
+
+  </div>
+
+  <script src="hospital.js"></script>
+
+</body>
+</html>
